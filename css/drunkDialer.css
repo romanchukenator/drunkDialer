@@ -1,11 +1,61 @@
 
-.index-card {
-  width: 800px;
-}
-
-#contact-list p {
+#contact-list .name p {
   font-family: 'Special Elite', cursive;
   font-size: 1.5em;
+  padding: 0 0 0 5px;
+  margin: 0;
+  opacity: 0.75;
 }
 
+#contact-list .headings p{
+  font-family: 'Special Elite', cursive;
+  font-size: .5em;
+  margin-bottom: 0;
+  padding: 0;
+}
 
+.index-card {
+  width: 800px;
+  height: 300px;
+  padding: 3px 0 5px 0;
+  margin: auto;
+  margin-bottom: 25px;
+
+  -webkit-box-shadow: 2px 4px 2px 0px rgba(50, 50, 50, 0.69);
+  -moz-box-shadow:    2px 4px 2px 0px rgba(50, 50, 50, 0.69);
+  box-shadow:         2px 4px 2px 0px rgba(50, 50, 50, 0.69);
+
+  background-image: url(../img/paperTexture.jpg);
+}
+
+.red-stripe{
+  border-top: 1px solid red;
+  opacity: 0.5;
+}
+
+.blue-stripe{
+  border-top: 1px solid #8396c5;
+  opacity: 0.5;
+}
+
+.highlight {
+  top: 100;
+  opacity: 1;
+}
+
+.profile {
+  width: 250px;
+  position: relative;
+  top: -200px;
+  right: 10px;
+
+  border: 3px solid black;
+
+  -ms-transform: rotate(-2deg); /* IE 9 */
+  -webkit-transform: rotate(-2deg); /* Chrome, Safari, Opera */
+  transform: rotate(-2deg);
+
+  -webkit-box-shadow: 1px 2px 1px 0px rgba(50, 50, 50, 0.69);
+  -moz-box-shadow:    1px 2px 1px 0px rgba(50, 50, 50, 0.69);
+  box-shadow:         1px 2px 1px 0px rgba(50, 50, 50, 0.69);
+}
