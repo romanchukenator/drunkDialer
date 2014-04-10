@@ -21,34 +21,86 @@
   </div>
 
   <div class="row">
+    <form data-abide id="new-entry-form">
 
-    <form id="new-entry-form">
-      <div class="large-4 medium-4 columns">
-        <label>First Name</label>
-        <input type="text" placeholder="first name" name="first-name" class="first-name" value="James" />
+      <div class="row">
+        <div class="name-field large-6 medium-6 column">
+          <label>
+            <input 
+              type="text" 
+              required 
+              pattern="[a-zA-Z]+" 
+              placeholder="first name"
+              name="first_name">
+          </label>
+          <small class="error">required</small>
+        </div>
+
+        <div class="name-field large-6 medium-6 column">
+          <label>
+            <input 
+              type="text" 
+              required 
+              pattern="[a-zA-Z]+" 
+              placeholder="last name"
+              name="last_name">
+          </label>
+          <small class="error">required</small>
+        </div>
       </div>
 
-      <div class="large-4 medium-4 columns">
-        <label>Last Name</label>
-        <input type="text" placeholder="last name" name="last-name" class="last-name" value="Romanchuk" />
+      <div class="row">
+        <div class="email-field large-8 medium-8 column">
+          <label>
+            <input 
+            type="email" 
+            required
+            placeholder="email"
+            name="email_address">
+          </label>
+          <small class="error">required (example@somwhere.com)</small>
+        </div>
+
+        <div class="email-field large-4 medium-4 column">
+          <label>
+            <input 
+            type="text"
+            placeholder="phone"
+            name="phone_number">
+          </label>
+        </div>
       </div>
 
-      <div class="large-4 medium-4 columns">
-        <label>Phone Number</label>
-        <input type="text" placeholder="phone number" name="phone" class="phone-number" value="778.833.3467" />
+      <div class="row">
+        <div class="name-field large-4 medium-4 column">
+        <label>
+          <input 
+            type="text" 
+            placeholder="city, village or township"
+            name="city">
+        </label>
+        </div>
+
+        <div class="name-field large-4 medium-4 column">
+        <label>
+          <input 
+            type="text" 
+            placeholder="province, state, et cetera"
+            name="state">
+        </label>
+        </div>
+
+        <div class="name-field large-4 medium-4 column">
+        <label>
+          <input 
+            type="text" 
+            placeholder="postal code, po box or rr"
+            name="postal_code">
+        </label>
+        </div>
       </div>
 
-          <div class="large-4 medium-4 columns">
-        <label>Email Address</label>
-        <input type="text" placeholder="email address" name="email" class="email-address" />
-      </div>
-
-      <div class="large-4 medium-4 columns">
-        <label>Company Name</label>
-        <input type="text" placeholder="company name" name="company" class="company-name" />
-      </div>
-    </form>
-  
+    </form>  
   </div>
 
   <div class="row">
@@ -60,125 +112,28 @@
 <hr>
 
   <div id="contact-list">
-  
-    <div class="index-card" >    
-
-      <div class="row headings red-stripe">
-        <div class="large-8 medium-8 columns">
-          <p>Name</p>
-        </div>
-
-        <div class="large-1 medium-1 columns text-center">
-          <p>Reg No.</p>
-        </div>
-        
-        <div class="large-1 medium-1 columns text-center">
-          <p>Cor No.</p>
-        </div>
-        
-        <div class="large-2 medium-2 columns text-center">
-          <p>Bk No.</p>
-        </div>
-      </div>
-
-      <div class="row name">
-        <div class="large-8 medium-8 columns">
-          <p>Romanchuk, James</p>
-        </div>
-
-        <div class="large-1 medium-1 columns text-center">
-          <p>1180</p>
-        </div>
-        
-        <div class="large-1 medium-1 columns text-center">
-          <p>A2A</p>
-        </div>
-        
-        <div class="large-2 medium-2 columns text-center">
-          <p>0002191</p>
-        </div>
-
-      </div>
-
-      <div class="row headings blue-stripe">
-        <div class="large-4 medium-4 large-offset-4 medium-offset-4 columns">
-          <p>City, Villiage or Township</p>
-        </div>
-        
-        <div class="large-4 medium-4 columns">
-          <p>PO Address</p>
-        </div>
-      </div>
-
-      <div class="row name">
-        <div class="large-4 medium-4 large-offset-4 medium-offset-4 columns">
-          <p>Vancouver, BC</p>
-        </div>
-        
-        <div class="large-4 medium-4 columns">
-          <p>V5Y1K6</p>
-        </div>
-      </div>
-
-      <div class="row headings blue-stripe">      
-        <div class="large-4 medium-4 large-offset-4 medium-offset-4 columns">
-          <p>Email Address</p>
-        </div>
-      </div>
-
-      <div class="row name">
-        <div class="large-8 medium-8 large-offset-4 medium-offset-4 columns">
-          <p>j.romanchuk@umblepie.com</p>
-        </div>
-      </div>
-
-      <div class="row headings blue-stripe">      
-        <div class="large-4 medium-4 large-offset-4 medium-offset-4 columns">
-          <p>Phone Number</p>
-        </div>
-      </div>
-
-      <div class="row name">
-        <div class="large-8 medium-8 large-offset-4 medium-offset-4 columns">
-          <p>778.833.3467</p>
-        </div>
-      </div>
-
-      <div class="row headings blue-stripe">      
-        <div class="large-4 medium-4 large-offset-4 medium-offset-4 columns">
-          <p>Date of Birth</p>
-        </div>
-      </div>
-
-      <div class="row name">
-        <div class="large-8 medium-8 large-offset-4 medium-offset-4 columns">
-          <p>1982-12-11</p>
-        </div>
-      </div>
-
-      <img 
-        class="profile" 
-        src="https://farm4.staticflickr.com/3706/9374579029_dbaf1cea6d.jpg" />
-
-    </div>
 
   </div>
-
 
   <div class="row">
     <div class="large-12 medium-12 columns text-center">
-    <h1>FOOTER</h1>
+      <h1>FOOTER</h1>
     </div>
   </div>
 
-
   <script src="js/vendor/jquery.js"></script>
+  <script src="js/handlebars-v1.3.0.js"></script>
   <script src="js/jquery.transit.min.js"></script>
   <script src="js/application.js"></script>
   <script src="js/foundation.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
   
   <script>
     $(document).foundation();
+  </script>
+
+  <script>
+    $.backstretch("https://s3.amazonaws.com/ooomf-com-files/y6RLlTlRmXga4RephkNg_IMG_2200.jpg");
   </script>
 </body>
 </html>
