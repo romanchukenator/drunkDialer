@@ -59,3 +59,17 @@
   -moz-box-shadow:    1px 2px 1px 0px rgba(50, 50, 50, 0.69);
   box-shadow:         1px 2px 1px 0px rgba(50, 50, 50, 0.69);
 }
+
+.random-images {
+  opacity: 1;
+
+  -webkit-transition: opacity 3s;
+  -moz-transition: opacity 3s;
+  -o-transition: opacity 3s;
+  -ms-transition: opacity 3s;
+  transition: opacity 3s;
+}
+
+.random-images:hover {
+  opacity: 0.2;
+}
